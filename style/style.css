@@ -1,0 +1,90 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+div
+{
+    height: 50px;
+    width: 100px;
+    color: azure;
+    background-color: red;
+    margin: 10px 10px 10px 10px;
+}
+
+/*Черный текст. Вложенная связь.*/
+div ber1
+{
+    color: black;
+}
+
+/*Зеленый текст на желто-зеленом фоне. Дочерняя связь.*/
+div>ber2
+{
+    background-color: greenyellow;
+    color: cadetblue;
+}
+
+/*Белый текст курсивом. Соседняя связь*/
+ber2+ber3
+{
+    color: white;
+    font-style: italic;
+}
+
+/*Красный текст на розовом фоне полужирным шрифтом. Родственная связь*/
+ber1~ber4
+{   
+    background-color: pink;
+    color: red;
+    font-style: bold;
+}
+
+/*4 селектора сгруппированы и у всех размер шрифта устанавливается 0.8*/
+ber1, ber2, ber3, ber4
+{
+    font-size: 0.8em;
+}
+
+/*при активации (нажатии) цвет текста становится фиолетовым*/
+ber2:active
+{
+    color: purple;
+}
+
+/*при активации (нажатии) цвет текста ссылки становится фиолетовым*/
+ber3:link
+{   
+    background-color: azure;
+    color: violet;
+}
+
+/*при активации (нажатии) цвет текста становится фиолетовым*/
+ber3:active{
+    color: darkmagenta;
+}
+
+
+
+
+.first
+{
+    background-color: blue;
+}
+
+.second
+{
+    width: 300px;
+}
+
+#d3
+{
+    background-color: yellow;
+}
+
+#d6
+{
+    height: 500;
+}
+
